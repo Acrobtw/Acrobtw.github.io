@@ -1,0 +1,9 @@
+body {
+  background-color: #1E1E1E;
+  margin: 20px auto;       
+  max-width: 1100px;       
+  border: 2px solid #FFC107;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}

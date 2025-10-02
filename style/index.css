@@ -1,5 +1,6 @@
 
 
+
 body {
   background-color: #1E1E1E;
   margin: 20px auto;       
@@ -11,9 +12,16 @@ body {
 }
 
 
+@font-face {
+    font-family: "Roboto";
+
+    src: url("../fonts/Roboto.ttf") format("truetype");
+}
+
 
 h1 {
     border-bottom: #ffcc80 2px solid;
+    font-family: Roboto, sans-serif;
 }
 
 h1, h2 {
@@ -37,6 +45,11 @@ p {
     color: #ffffff;
 }
 
+p.needboldertext {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 p.tony {
     color: white;
     font-weight: bold;
@@ -50,6 +63,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+em.email {
+    color: #90caf9;
+    font-style: normal;
+    text-decoration: blink;
 }
 
 blockquote.favoritequote {
