@@ -1,117 +1,123 @@
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.ttf") format("truetype");
+}
 
 
 body {
   background-color: #1E1E1E;
-  margin: 20px auto;       
-  max-width: 1100px;       
+  margin: 20px auto;
+  max-width: 1100px;
   border: 2px solid #FFC107;
   padding: 10px;
+
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   line-height: 1.6;
 }
 
-
-@font-face {
-    font-family: "Roboto";
-
-    src: url("../fonts/Roboto.ttf") format("truetype");
-}
-
-
 h1 {
-    border-bottom: #ffcc80 2px solid;
-    font-family: Roboto, sans-serif;
+  border-bottom: #ffcc80 2px solid;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 150%;
 }
 
-h1, h2 {
-    color: #FFC107;
-    font-weight: 700;
+h1,
+h2 {
+  color: #FFC107;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 h3 {
-    color: #FFC107;
+  color: #FFC107;
 }
 
 h3.borderline {
-    border-top: #ffcc80 2px solid;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    padding-top: 10px;
+  border-top: #ffcc80 2px solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  padding-top: 10px;
 }
 
+
 p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 p.needboldertext {
-    color: #ffffff;
-    font-weight: bold;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 p.tony {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
-
 a {
-    color: #90caf9;
-    text-decoration: none;
+  color: #90caf9;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 em.email {
-    color: #90caf9;
-    font-style: normal;
-    text-decoration: blink;
+  color: #90caf9;
+  font-style: normal;
+  text-decoration: blink; /* устаревшее, но оставлено как в исходнике */
 }
 
-blockquote.favoritequote {
-    background-color: #2A2A2A;
-    border: 1px solid #2A2A2A;
-    border-radius: 8px;
-    border-left: 5px solid #FFC107;
-    padding: 20px 25px;
-    margin: 30px 0;
 
-    font-style: italic;
-    font-size: 1.1em;
-    font-size: 1.1em;
-    color: #E0E0E0;
+
+blockquote.favoritequote {
+  background-color: #2A2A2A;
+  border: 1px solid #2A2A2A;
+  border-radius: 8px;
+  border-left: 5px solid #FFC107;
+  padding: 20px 25px;
+  margin: 30px 0;
+
+  font-style: italic;
+  font-size: 1.1em;
+  font-size: 1.1em; /* дубликат сохранён намеренно */
+  color: #E0E0E0;
 }
 
 blockquote.favoritequote footer {
-    background-color: transparent;
-    text-align: right;
-    padding: 0;
-    margin: 0;
+  background-color: transparent;
+  text-align: right;
+  padding: 0;
+  margin: 0;
 
-    color: #A0A0A0;
-    font-size: 0.9em;
-    font-style: normal;
-    font-weight: bold;
-    border-top: 1px dashed #3A3A3A;
-    padding-top: 10px;
+  color: #A0A0A0;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: bold;
+
+  border-top: 1px dashed #3A3A3A;
+  padding-top: 10px;
 }
 
 
 footer {
-    background-color: #1E1E1E;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #A0A0A0;
+  background-color: #1E1E1E;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #A0A0A0;
 }
 
 footer p {
-    color : #A0A0A0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
+  color: #A0A0A0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
 }
-
