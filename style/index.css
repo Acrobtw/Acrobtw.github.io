@@ -1,7 +1,10 @@
 
 @font-face {
   font-family: "Roboto";
+
   src: url("../fonts/Roboto.ttf") format("truetype");
+
+  font-weight: 100 900;
 }
 
 
@@ -17,16 +20,15 @@ body {
   line-height: 1.6;
 }
 
+h1,h2,h3 {
+  color: #FFC107;
+  font-weight: 700;
+}
+
 h1 {
   border-bottom: #ffcc80 2px solid;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 150%;
-}
-
-h1,
-h2 {
-  color: #FFC107;
-  font-weight: 700;
 }
 
 h2 {
@@ -50,9 +52,8 @@ p {
   color: #ffffff;
 }
 
-p.needboldertext {
+  .needboldertext {
   color: #ffffff;
-  font-weight: bold;
 }
 
 p.tony {

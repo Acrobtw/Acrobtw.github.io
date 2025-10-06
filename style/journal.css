@@ -5,8 +5,10 @@ body {
   border: 2px solid #FFC107;
   padding: 10px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: small;
+  font-weight: normal;
   line-height: 1.6;
+  color: white;
 }
 
 @font-face {
@@ -15,10 +17,28 @@ body {
     src: url("../fonts/Roboto.ttf") format("truetype");
 }
 
+h1,
+h2 {
+  color: #777777;
+  text-decoration: underline;
+}
+
 h1 {
-  font-size: 150%;
+  font-family: italic;
+  font-size: 220%;
+  font-weight: bold;
+  border-bottom: 2px solid #FFC107;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+blockquote {
+  font-style: italic;
+  color: #CCCCCC;
+  border-left: 4px solid #FFC107;
+  margin: 10px 20px;
+  padding-left: 10px;
 }
