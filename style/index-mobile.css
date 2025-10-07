@@ -1,0 +1,145 @@
+/* MOBILE: light theme */
+:root {
+  --bg: #ffffff;        /* фон страницы (белый) */
+  --surface: #f2f2f2;   /* фон карточек/блоков */
+  --accent: #f96d00;    /* акцент */
+  --text: #222831;      /* основной текст (тёмный) */
+  --text-muted: #4b5563;      /* приглушённый текст */
+  --surface-border: #e5e7eb;  /* светлая линия/граница */
+  color-scheme: light;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* мобильные отступы, убираем рамку-каркас с десктопа */
+  margin: 12px;
+  padding: 12px;
+  max-width: none;
+  border: 0;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Картинки адаптивно */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+/* Заголовки светлой темы */
+h1, h2, h3 {
+  color: var(--accent);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0.6em 0 0.4em;
+}
+
+h1 {
+  font-size: 1.35rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 65%, white 35%);
+  padding-bottom: 0.45rem;
+  margin-top: 0.4rem;
+}
+
+h2 { font-size: 1.15rem; }
+h3 { font-size: 1.05rem; }
+
+h3.borderline {
+  border-top: 2px solid color-mix(in srgb, var(--accent) 65%, white 35%);
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  padding-top: 0.6rem;
+}
+
+/* Текст и ссылки */
+p,
+.needboldertext,
+p.tony {
+  color: var(--text);
+}
+p.tony { font-weight: 700; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(249, 109, 0, 0.25);
+}
+a:hover,
+a:focus { text-decoration: underline; }
+
+em.email {
+  color: var(--accent);
+  font-style: normal;
+}
+
+/* Карточки — светлые поверхности */
+.why,
+.favoritequote {
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.favoritequote {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.favoritequote footer {
+  background: transparent;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 700;
+  border-top: 1px dashed #d1d5db;
+  padding-top: 10px;
+}
+
+/* Футер — светлый, без заливки */
+footer {
+  background: transparent;
+  text-align: center;
+  padding: 16px 0 8px;
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+footer p {
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Безопасные отступы около вырезов/панелей iOS */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
+/* Если пользователь просит меньше движения */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
