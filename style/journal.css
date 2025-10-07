@@ -35,10 +35,17 @@ h2 {
   font-weight: bold;
 }
 
+#guarantee {
+  font-size: 120%;
+  color: #FF5722;
+  font-weight: bold;
+}
+
 blockquote {
   font-style: italic;
   color: #CCCCCC;
   border-left: 4px solid #FFC107;
-  margin: 10px 20px;
-  padding-left: 10px;
+  background-image: url(../images/dust_texture.png);
+  margin: 30px;
+  padding: 25px;
 }

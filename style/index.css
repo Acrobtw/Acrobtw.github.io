@@ -7,13 +7,22 @@
   font-weight: 100 900;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+}
+
 
 body {
-  background-color: #1E1E1E;
+  background-color: black;
   margin: 20px auto;
   max-width: 1100px;
   border: 2px solid #FFC107;
-  padding: 10px;
+  padding: 20px;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -73,12 +82,20 @@ a:hover {
 em.email {
   color: #90caf9;
   font-style: normal;
-  text-decoration: blink; /* устаревшее, но оставлено как в исходнике */
+  text-decoration: blink; 
 }
 
+.why {
+  background-color: #2A2A2A;
+  border: 1px solid #2A2A2A;
+  border-left: #FFC107 5px solid;
+  font-size: 1.1em;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
 
-
-blockquote.favoritequote {
+.favoritequote {
   background-color: #2A2A2A;
   border: 1px solid #2A2A2A;
   border-radius: 8px;
@@ -88,11 +105,10 @@ blockquote.favoritequote {
 
   font-style: italic;
   font-size: 1.1em;
-  font-size: 1.1em; /* дубликат сохранён намеренно */
   color: #E0E0E0;
 }
 
-blockquote.favoritequote footer {
+.favoritequote footer {
   background-color: transparent;
   text-align: right;
   padding: 0;
@@ -109,7 +125,7 @@ blockquote.favoritequote footer {
 
 
 footer {
-  background-color: #1E1E1E;
+  background-color: black;
   text-align: center;
   padding: 20px;
   font-size: 14px;
