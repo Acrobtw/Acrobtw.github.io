@@ -3,33 +3,21 @@
   font-family: "Roboto";
 
   src: url("../fonts/Roboto.ttf") format("truetype");
-
   font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media screen and (max-width: 600px) {
- html, body {
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
-  }
 
-  body {
-    padding: 10px;
-    margin: 10px
-  }
+html, body {
+  background-color : #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #ffffff;
-    color: white;
-  }
-}
-
 
 body {
-  background-color: black;
   margin: 20px auto;
   max-width: 1100px;
   border: 2px solid #FFC107;
@@ -89,6 +77,42 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #E0E0E0;
+  }
+  h1, h2, h3 {
+    color: #FFC107;
+  }
+  p {
+    color: #E0E0E0;
+  }
+  a {
+    color: #90caf9;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10px;
+    padding: 10px;
+    max-width: none;
+    border-width: 0;
+  }
+  h1 {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+
+:root { color-scheme: light; }
 
 em.email {
   color: #90caf9;
