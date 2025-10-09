@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Guest Page</title>
-        <link rel="stylesheet" href="style/index.css" />
-        <link rel="stylesheet" href="style/index-mobile.css" media="(max-width: 600px)">
-    </head>
-    <body>
-        <img src="images/logo.png" alt="Website Logo" width="150">
-        <h1>Welcome to My First Website!</h1>
-        <img src="images/firstPicture.jpg" width="300" alt="My Photo">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Guest Page</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/index-mobile.css" media="(max-width: 600px)">
+  </head>
+  <body>
+    <main class="container" role="main">
+      <img src="images/logo.png" alt="Логотип сайта" class="logo" width="250" />
 
-        <h2 id="aboutme">About Me</h2>
-        <p class="needboldertext">My name is Nikita, I want to become a programmer, and I will succeed. <br>
-            business inquirments -> <a href="mailto:acrobtw@gmail.com"><em class="email">acrobtw@gmail.com</em></a>
-        </p>
+      <h1>Welcome to My First Website!</h1>
 
-        <h2>Origin</h2>
-        <p>Born in the city of Rivne, currently residing in Kyiv. </p>
+      <img src="images/firstPicture.jpg" alt="Моё фото" class="hero" width="350"/>
 
-        <h2>My Life Goal</h2>
-        <p>To secure my life and ensure that
-            my whole family is happy
-        </p>
+      <div id="personalInfo">
+      <h2 id="aboutme">About Me</h2>
+      <p class="needboldertext">
+        My name is Nikita, I want to become a programmer, and I will succeed.
+        <br />
+        business inquirments →
+        <a href="mailto:acrobtw@gmail.com"><em class="email">acrobtw@gmail.com</em></a>
+      </p>
 
+      
+      <h2>Origin</h2>
+      <p>Born in the city of Rivne, currently residing in Kyiv.</p>
+      
+      <h2>My Life Goal</h2>
+      <p>To secure my life and ensure that my whole family is happy.</p>
 
-        <h3>Why I'm Doing this?</h3>
-        <p class="why">Because I want to learn how to make websites and
-        I want to share my thoughts with the world. </p>
+      <h3>Why I'm Doing this?</h3>
+      <p class="card">
+        Because I want to learn how to make websites and I want to share my thoughts with the world.
+      </p>
+      </div>
 
-        <h3 class="borderline">Go to Tony</h3>
+      <h3 class="borderline">Go to Tony</h3>
+      <p class="tony">
+        If you want to see my mini-project based on a Book,
+        <a target="_blank" href="tony.html" title="This is my mini-project based on a Book">Click</a>.
+      </p>
 
-        <p class="tony">If you want to see my mini-project based on a Book,
-            <a target="_blank" href="tony.html"
-            title="This is my mini-project based on a Book"><em>Click</em></a>
-        </p>
+      <blockquote class="favoritequote" aria-labelledby="fav-quote-title">
+        <h3 id="fav-quote-title">Favorite Quote</h3>
+        <p>"The best way to predict the future is to invent it."</p>
+        <footer>— Alan Kay</footer>
+      </blockquote>
 
-
-
-        <blockquote class="favoritequote">
-            <h3>Favorite Quote</h3>
-            <p>"The best way to predict the future is to invent it."</p>
-            <footer>- Alan Kay</footer>
-        </blockquote>
-
-
-            <footer>
-                <p>
-                &copy; 2025 Made by Acr0
-                </p>
-            </footer>
-    </body>
+      <footer>
+        <p>&copy; 2025 Made by Acr0</p>
+      </footer>
+    </main>
+  </body>
 </html>
