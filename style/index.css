@@ -108,13 +108,17 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: var(--color-accent-secondary);
+}
+
 
 #personalInfo {
     border: 2px solid #FFC107;
     border-radius: var(--radius-md);
-    margin-left: 20px;
-    padding: 15px;
-    padding-top: 0px;
+    margin: 50px 30px 30px 30px;
+    padding: 10px;
+    padding-top: 10px;
     line-height: 1;
     text-align: left;
     font-size: 0.8em;
@@ -122,6 +126,20 @@ a:hover {
 
 h1,h2,h3,h4 #personalInfo {
     font-size: 1.2em;
+}
+
+#fishka {
+    float: right;
+    margin: 0 0 15px 15px;
+    height: 300px;
+    width: 250px;
+}
+
+.class {
+    font-size: italic;
+}
+.author {
+    font-weight: bold;
 }
 
 p.needboldertext a {
