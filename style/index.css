@@ -113,12 +113,20 @@ a:visited {
 }
 
 
+#fishka {
+    float: right;
+    margin: 0 0 15px 15px;
+    height: 300px;
+    width: 250px;
+}
+
 #personalInfo {
     border: 2px solid #FFC107;
     border-radius: var(--radius-md);
-    margin: 50px 30px 30px 30px;
+    margin: 50px 30px 30px 5px;
     padding: 10px;
-    padding-top: 10px;
+    padding-left: 10px;
+    
     line-height: 1;
     text-align: left;
     font-size: 0.8em;
@@ -128,12 +136,6 @@ h1,h2,h3,h4 #personalInfo {
     font-size: 1.2em;
 }
 
-#fishka {
-    float: right;
-    margin: 0 0 15px 15px;
-    height: 300px;
-    width: 250px;
-}
 
 .class {
     font-size: italic;
