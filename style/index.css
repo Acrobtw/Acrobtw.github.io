@@ -13,7 +13,7 @@
 :root {
     --color-background-main: #121212;
     --color-background-card: #1E1E1E;
-    --color-accent-primary: #FFC107;
+    --color-accent-primary: #E0C368;
     --color-accent-secondary: #BB86FC;
     --color-text-light: #E0E0E0;
     --color-text-muted: #A0A0A0;
@@ -121,7 +121,7 @@ a:visited {
 }
 
 #personalInfo {
-    border: 2px solid #FFC107;
+    border: 2px solid #A57B32;
     border-radius: var(--radius-md);
     margin: 50px 30px 30px 5px;
     padding: 10px;
