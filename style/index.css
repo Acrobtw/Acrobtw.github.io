@@ -62,6 +62,12 @@ body {
 .btn.block { display: block; text-align: center; width: 100%; margin-top: .5rem; }
 .btn:hover { filter: brightness(1.05); }
 
+.brand,
+.brand:hover,
+.brand:focus-visible {
+  background: transparent;
+}
+
 .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: var(--space-3); }
 .highlight { background: var(--surface); border-left: 4px solid var(--primary); padding: var(--space-3); border-radius: var(--radius); }
 
