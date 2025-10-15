@@ -1,70 +1,128 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Guest Page</title>
+    <title>Nikita — Personal Page</title>
+    <meta name="description" content="About me, goals, favorite music, and a mini project." />
     <link rel="stylesheet" href="style/index.css" />
-    <link rel="stylesheet" href="style/index-mobile.css" media="(max-width: 600px)">
   </head>
   <body>
-    
-      <main class="container" role="main">
-      <img src="images/logo.png" alt="Логотип сайта" class="logo" width="250" />
+    <a class="skip-link" href="#content">Skip to content</a>
 
-      
-      <h1>Welcome to My First Website!</h1>
-      <div id="personalInfo">
-      <img src="images/secondPicture.png" alt="Моё фото" class="hero" width="350" id="fishka"/>
-      <h2 id="aboutme">About Me</h2>
-      
-      <p class="needboldertext">
-        My name is Nikita, I want to become a programmer, and I will succeed.
-        <br />
-        business inquirments →
-        <a href="mailto:acrobtw@gmail.com"><em class="email">acrobtw@gmail.com</em></a>
-      </p>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <img src="images/logo.png" alt="Logo" width="160" height="48" />
+        </a>
 
-      
-      <h2>Origin</h2>
-      <p>Born in the city of Rivne, currently residing in Kyiv.</p>
-      
-      <h2>My Life Goal</h2>
-      <p>To secure my life and ensure that my whole family is happy.</p>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" />
+        <label for="nav-toggle" class="nav-burger" title="Menu" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
 
-      <h3>Why I'm Doing this?</h3>
-      <p class="card">
-        Because I want to learn how to make websites and I want to share my thoughts with the world.
-      </p>
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#origin">Origin</a></li>
+            <li><a href="#goal">Goal</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#quote">Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-     </div>
+    <main id="content" class="container layout">
+      <article class="prose">
+        <h1>Hi, I’m Nikita</h1>
+        <p class="lead">
+          Aspiring developer who loves learning and building. Here’s a short intro,
+          my goals, favorite tracks, and a mini project.
+        </p>
 
-      <h3>Favourite Music</h3>
-           <ul>
-        <li><span class="title"> Cloudbusting</span>,
-        <span class="author"> by Kate Bush</span> </li>
-        <li> <span class="title">edgerunner</span>, 
-        <span class="author">Lostlight </span></li>
-        <li> <span class="title">Poker Face</span>,
-        <span class="author">Lady Gaga</span></li>
-        
-      </ul>
+        <section id="about" class="card about">
+          <img src="images/secondPicture.png" alt="Photo of Nikita" width="420" height="520" loading="lazy" />
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I’m learning web development. Persistence + practice = results.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="mailto:acrobtw@gmail.com">Email me</a>
+              <a class="btn ghost" href="#project">My project</a>
+            </div>
+          </div>
+        </section>
 
-      <h3 class="borderline">Go to Tony</h3>
-      <p class="tony">
-        If you want to see my mini-project based on a Book,
-        <a target="_blank" href="tony.html" title="This is my mini-project based on a Book">Click</a>.
-      </p>
+        <section id="origin">
+          <h2>Origin</h2>
+          <p>Born in Rivne, currently living in Kyiv.</p>
+        </section>
 
-      <blockquote class="favoritequote" aria-labelledby="fav-quote-title">
-        <h3 id="fav-quote-title">Favorite Quote</h3>
-        <p>"The best way to predict the future is to invent it."</p>
-        <footer>— Alan Kay</footer>
-      </blockquote>
+        <section id="goal" class="highlight">
+          <h2>My Life Goal</h2>
+          <p>
+            Build a secure life and make my family happy. I’m improving every day, step by step.
+          </p>
+        </section>
 
-      <footer>
-        <p>&copy; 2025 Made by Acr0</p>
-      </footer>
+        <section id="why">
+          <h3>Why this site?</h3>
+          <p>
+            To practice HTML/CSS, showcase work, and share thoughts.
+          </p>
+        </section>
+
+        <section id="music">
+          <h3>Favorite Music</h3>
+          <ul class="list list-cards">
+            <li><strong>Cloudbusting</strong> — Kate Bush</li>
+            <li><strong>Edgerunner</strong> — Lostlight</li>
+            <li><strong>Poker Face</strong> — Lady Gaga</li>
+          </ul>
+        </section>
+
+        <section id="project" class="card">
+          <h3>Mini Project</h3>
+          <p>A small project inspired by a book — layout and design.</p>
+          <a class="btn primary" href="tony.html" target="_blank" rel="noopener noreferrer">Open project</a>
+        </section>
+
+        <section id="quote">
+          <blockquote class="quote">
+            <p>The best way to predict the future is to invent it.</p>
+            <footer>— Alan Kay</footer>
+          </blockquote>
+        </section>
+      </article>
+
+      <aside class="side">
+        <nav class="toc" aria-label="On this page">
+          <h2 class="toc-title">Sections</h2>
+          <ol>
+            <li><a href="#about">About</a></li>
+            <li><a href="#origin">Origin</a></li>
+            <li><a href="#goal">Goal</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#quote">Quote</a></li>
+          </ol>
+        </nav>
+
+        <section class="mini-card">
+          <h3>Contact</h3>
+          <a class="btn block" href="mailto:acrobtw@gmail.com">acrobtw@gmail.com</a>
+        </section>
+      </aside>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <time datetime="2025">2025</time> Acr0</small>
+      </div>
+    </footer>
   </body>
 </html>
